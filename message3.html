@@ -54,17 +54,18 @@
             document.getElementsByClassName("pop_up")[0].style.display = "none";
             // message_arrayの監視開始
             add_message();
-            message_array.push(["こんにちは！ご当選おめでとうございます!!あなたは100万円の賞金を入手する権利を得ました。", "enemy"]);
-            message_array.push(["こんにちは、どうやったら貰えるんですか？", "me"]);
-            message_array.push(["それは非常に簡单なプロセスです。まずURLをクリックしてください", "enemy"]);
-            message_array.push(["http://aikkgkyco.xyz/login", "enemy"]);
-            message_array.push(["show_pop_up", '{ "genre": "質問", "message": "あなたなら送られてきたリンクをクリックしますか？", "button1_txt": "クリックする", "button2_txt": "無視する", "correct_answer": "2", "btn1_content":"突然送られてきたリンクをクリックするのは危険です!常に疑ってみることも大切です。", "btn2_content":"素晴らしいですね!突然送られてきたリンクはクリックしないことが大切です。"}'])
+            message_array.push(["最近お金が足りなくてやばい・・・バイトじゃお金足りないんだよね", "me"]);
+            message_array.push(["丁度おすすめのバイトあるんだけど知りたい？", "enemy"]);
+            message_array.push(["ほんと！どんな仕事？？\n簡単ならやってみようかな", "me"]);
+            message_array.push(["本当に簡単だよ！地域のお年寄りの家にある荷物を預かるだけ！", "enemy"]);
+            message_array.push(["1回で報酬は10万円!!採用枠あと1人だけみたいだけど、どうする？", "enemy"]);
+            message_array.push(["show_pop_up", '{ "genre": "質問", "message": "地元の友達と連絡していたところ高単価のバイトを紹介されました。あなたならどうする？", "button1_txt": "バイトに応募する", "button2_txt": "誘いを断る", "correct_answer": "2", "btn1_content":"高額で簡単な仕事、実は闇バイトかもしれません。加害者にならない為にも怪しい仕事は断るようにしましょう!", "btn2_content":"素晴らしいですね！知らず知らずのうちに詐欺に加担することも…。怪しい仕事は断るようにしましょう!"}'])
         }
         
         // ゲームのシナリオを進行するメインの関数
         async function scenario_start() {
             // 最初のゲームスタートポップアップ
-            ityped.init(document.querySelector("#ityped"), { strings: ['ようこそ!', 'これは詐欺の体験型ゲームです'], loop: false });
+            ityped.init(document.querySelector("#ityped"), { strings: ['次は闇バイトの被害体験です'], loop: false });
             await wait(4500);
             // テキストを消し、ボタンを出現させる
             let txt_elm = document.getElementById("ityped");
