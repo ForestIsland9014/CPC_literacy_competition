@@ -7,9 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel ="stylesheet" href="css/CPC.css">
     <link rel ="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/css/5-8.css">
-    <!-- <script src="js/jquery.js"></script> -->
+        <!-- <script src="js/jquery.js"></script> -->
     <!-- <script src="js/slick.js"></script> -->
     <style>
     </style>
@@ -103,8 +101,8 @@
     </main>
     <footer >
         <div class="footer_menu">
-            <a href="p2_2.html" class="button change_btn" style="height: 41px!important;max-width: 224px;">ページ切り替え</a>
-            <div class="button" onclick="answer()" style="height: 41px!important;padding: 1px;line-height: 39px;max-width: 224px;">これが偽サイト！</div>
+            <a href="p2_2.html" class="button change_btn">ページ切り替え</a>
+            <div class="button" onclick="answer()">これが偽サイト！</div>
         </div>
     </footer>
     <script>
@@ -126,7 +124,7 @@
             await wait(1000);
             document.getElementById("ans").style.display = "none";
 
-            document.getElementById("control_str").innerHTML = "高価な商品が無料で手に入ることは滅多にありません！<br>下の口コミでも当たっている人が続出していますが<br>そんな簡単に当たることはありません！";
+            document.getElementById("control_str").innerHTML = "高価な商品が無料で手に入ることは滅多にありません！ページ下部の口コミでも当たっている人が続出していますが、そんな簡単に当たることはありません！";
             document.getElementsByClassName("game_start")[0].getElementsByTagName("p")[0].innerText = "次のゲームへ進む";
             document.getElementsByClassName("game_start")[0].setAttribute("onclick", 'location.href = "p3_1.html";')
             document.getElementsByClassName("game_start")[0].style.background = "#e44100"

@@ -141,7 +141,7 @@
             await wait(1000);
             document.getElementById("ans").style.display = "none";
 
-            document.getElementById("control_str").innerHTML = "価格が安すぎたりや出品者情報がなかったり<br>評価が高すぎる、漢字が変など<br>怪しい要素は見つけられましたか？<br>怪しいと思ったら利用を控えることが大切です！";
+            document.getElementById("control_str").innerHTML = "価格が安すぎたりや出品者情報が無い、評価が高すぎる、漢字が変など怪しい要素は見つけられましたか？怪しいと思ったら利用を控えることが大切です！";
             document.getElementsByClassName("game_start")[0].getElementsByTagName("p")[0].innerText = "次のゲームへ進む";
             document.getElementsByClassName("game_start")[0].setAttribute("onclick", 'location.href = "p2_1.html";')
             document.getElementsByClassName("game_start")[0].style.background = "#e44100"

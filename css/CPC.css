@@ -85,6 +85,7 @@ aside{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    background-color: #fff;
 }
 
 .address_bar {
@@ -439,7 +440,10 @@ body{
     font-size: 70px!important;
     font-weight: bold;
 }
-
+#control_str {
+    width: 60%;
+    margin: 0 20%;
+}
 
 
 @media screen and (max-width: 1090px) {
@@ -452,7 +456,7 @@ body{
     }
 }
 @media screen and (max-width: 830px) {
-    #control p {
+    #control_str {
         font-size: unset;
     }
 }
@@ -462,6 +466,11 @@ body{
         padding: 12px 0px;
         width: 97%;
     }
+    #control_str {
+        width: 95%;
+        margin: 0 5%;
+    }
+    
 }
 
 @media screen and (max-width: 700px) { 
